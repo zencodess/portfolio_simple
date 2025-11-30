@@ -2,9 +2,10 @@
 window.portfolioData = {
   about: {
     summary:
-      "Practical, detail-oriented engineer with ~3 years of experience shipping products that impact teams globally. \
-      Pursued MSc Computer Science at University of Amsterdam (https://www.uva.nl) & Vrije Universiteit Amsterdam (https://vu.nl) to deepen large-scale data and ML systems expertise. \
-      Focused on backend, scalable systems, knowledge bases, graphs, and retrieval, with a knack for bridging research and real-world delivery in backend + generative AI.",
+      "I am a practical-minded and detail-oriented software engineer with around 3 years of experience in the industry, shipping products that impact multiple processes and customer teams across the globe. \
+      My love for large-scale data systems and enterprise machine learning systems pushed me to pursue an MSc in Computer Science at the University of Amsterdam and Vrije Universiteit Amsterdam. \
+      I love everything about backend, scalable systems, data, knowledge bases, graphs, search, and retrieval. \
+      I enjoy building solutions that bridge the gap between cutting-edge research and real-world applications, with a keen skill set in the intersection of backend and generative AI.",
     whatIDo: [
       "LLM/RAG/Generative apps for tabular and knowledge-base search.",
       "Real-time and batch backend systems with scaling and observability.",

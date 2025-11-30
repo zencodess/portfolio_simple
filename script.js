@@ -81,26 +81,24 @@
     const root = document.getElementById("experience-root");
     if(!root || !data.experience) return;
     root.innerHTML = "";
-    const timeline = el("div",{className:"timeline"});
+    const timeline = el("div",{className:"timeline-zigzag"});
 
-    data.experience.forEach(role=>{
-      const item = el("div",{className:"timeline-item"});
-      const head = el("div",{className:"timeline-head"});
-      head.appendChild(el("h3",{text:role.role}));
-      head.appendChild(el("span",{className:"muted",text:`${role.location} · ${role.dates}`}));
-      item.appendChild(head);
-      item.appendChild(el("p",{className:"muted",text:role.summary}));
+    const short = txt => {
+      if(!txt) return "";
+      const first = txt.split(".")[0];
+      return first ? `${first.trim()}.` : txt;
+    };
 
-      if(role.impacts && role.impacts.length){
-        const grid = el("div",{className:"impact-grid"});
-        role.impacts.forEach(impact=>{
-          const card = el("div",{className:"impact-card"});
-          card.appendChild(el("h4",{text:impact.title}));
-          card.appendChild(el("p",{text:impact.desc}));
-          grid.appendChild(card);
-        });
-        item.appendChild(grid);
-      }
+    data.experience.forEach((role, idx)=>{
+      const side = idx % 2 === 0 ? "left" : "right";
+      const item = el("div",{className:`timeline-node ${side}`});
+      const bubble = el("div",{className:"timeline-bubble"});
+
+      bubble.appendChild(el("p",{className:"muted tiny",text:role.dates}));
+      bubble.appendChild(el("h3",{text:role.role}));
+      bubble.appendChild(el("p",{className:"muted",text:short(role.summary)}));
+
+      item.appendChild(bubble);
       timeline.appendChild(item);
     });
 
