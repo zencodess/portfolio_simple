@@ -10,6 +10,7 @@
   <nav class="navbar">
     <div class="logo">Sravya</div>
     <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -18,56 +19,45 @@
     </ul>
   </nav>
 
-  <header class="hero">
-    <div class="hero-text">
-      <span class="tag">Backend · ML · Data Platforms</span>
-      <h1>Building reliable systems and ML products with real impact.</h1>
-      <p class="lede">
-        MSc CS grad, ex-Micron engineer. I ship data pipelines, LLM/RAG apps, and
-        analytics platforms that shorten iteration loops for teams.
-      </p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects">View projects</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
-      </div>
-      <div class="hero-highlights">
-        <div><strong>50% faster</strong> design cycles with DocToCode</div>
-        <div><strong>65+ bugs</strong> resolved on-call across 15+ release cycles</div>
-        <div><strong>Real-time</strong> pipelines at 50K updates/sec</div>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="nameplate">
-        <div class="avatar">S</div>
-        <div>
-          <p class="muted">Software Engineer · Hyderabad / Netherlands</p>
-          <p class="focus">ML + Backend + Data Engineering</p>
+  <header id="hero" class="page hero">
+    <div class="hero-left">
+      <div class="avatar small">Photo</div>
+      <div>
+        <p class="eyebrow">Backend · ML · Data Platforms</p>
+        <h1>Building reliable systems and ML products with real impact.</h1>
+        <p class="lede">Add a short one-liner about you here. Keep it crisp for quick context.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
       </div>
-      <div class="stats">
-        <div><span>5+ yrs</span><small>engineering</small></div>
-        <div><span>GenAI</span><small>LLMs · RAG · KBs</small></div>
-        <div><span>Infra</span><small>Kafka · K8s · Cloud</small></div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-card">
+        <h3>At a glance</h3>
+        <ul>
+          <li>DocToCode: 50% faster flash design iterations</li>
+          <li>65+ bugs resolved on-call across 15+ release cycles</li>
+          <li>Real-time pipelines at 50K updates/sec (0.5 ms latency)</li>
+          <li>Published 2 papers on software automation</li>
+        </ul>
       </div>
     </div>
   </header>
 
-  <section id="about" class="section about">
+  <section id="about" class="page section about">
     <div class="section-header">
       <p class="eyebrow">About</p>
       <h2>At-a-glance</h2>
-      <p class="muted">
-        I design data products end-to-end: ingestion, storage, ML, and the
-        dashboards or APIs that put insights in front of people fast.
-      </p>
+      <p class="muted">I design data products end-to-end: ingestion, storage, ML, and the APIs or dashboards that ship insight fast.</p>
     </div>
     <div class="about-grid">
       <div class="about-card">
         <h3>What I do</h3>
         <ul>
-          <li>LLM/RAG apps for tabular and knowledge-base search</li>
-          <li>Real-time and batch data pipelines with observability</li>
-          <li>APIs and dashboards that translate data into action</li>
+          <li>LLM/RAG apps for tabular and knowledge-base search.</li>
+          <li>Real-time and batch data pipelines with observability.</li>
+          <li>APIs and dashboards that translate data into action.</li>
         </ul>
       </div>
       <div class="about-card">
@@ -76,16 +66,20 @@
       </div>
       <div class="about-card">
         <h3>Highlights</h3>
-        <p>Published two papers on process automation; multiple execution and customer-focus awards; Dean's Merit List for academics.</p>
+        <ul>
+          <li>Execution and customer-focus awards at Micron.</li>
+          <li>Dean's Merit List for academics.</li>
+          <li>Best Poster for AutoCodeDoc; two papers on automation.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="page section">
     <div class="section-header">
       <p class="eyebrow">Projects</p>
       <h2>Recent work by focus area</h2>
-      <p class="muted">Each card links out for details. Buckets keep things scannable: ML, backend, and full-stack delivery.</p>
+      <p class="muted">Buckets keep scanning simple. Each card can link out to details.</p>
     </div>
     <div class="bucket-grid">
       <div class="bucket">
@@ -96,7 +90,7 @@
               <h4>Natural Language Interface to CDM</h4>
               <span class="pill">LLM · RAG</span>
             </div>
-            <p>Built a table-aware RAG app to answer corporate data queries, boosting data literacy and discoverability.</p>
+            <p>Table-aware RAG to answer corporate data queries; boosts data literacy and discoverability.</p>
             <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
           </div>
           <div class="card">
@@ -178,11 +172,11 @@
     </div>
   </section>
 
-  <section id="experience" class="section">
+  <section id="experience" class="page section">
     <div class="section-header">
       <p class="eyebrow">Experience</p>
-      <h2>Where I've worked</h2>
-      <p class="muted">Highlights from roles across semiconductor, finance, and generative AI.</p>
+      <h2>Timeline of impact</h2>
+      <p class="muted">Story-first view of roles and the outcomes delivered.</p>
     </div>
     <div class="timeline">
       <div class="timeline-item">
@@ -190,21 +184,40 @@
           <h3>Software Engineer II · Micron Technology</h3>
           <span class="muted">Hyderabad · Aug 2020 – May 2023</span>
         </div>
-        <ul>
-          <li>DocToCode: core features for spec-to-code platform; accelerated flash memory design by 50%.</li>
-          <li>Performance Prediction: data ingestion, processing, anomaly detection on terabytes of simulation data.</li>
-          <li>Simulation/Verification dashboards: backend and monitoring for DRAM product lines.</li>
-          <li>MemberManager: graph DB + Redis powered membership service with millisecond responses.</li>
-          <li>PackageIO: platform for auto-generation and verification across DRAM products.</li>
-          <li>On-call: resolved 65+ software bugs across 15+ release cycles to unblock global teams.</li>
-        </ul>
+        <p class="muted">Shipped tools that shortened design cycles, raised reliability, and kept teams unblocked during critical releases.</p>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <h4>DocToCode</h4>
+            <p>Spec-to-code platform that cut flash memory design iteration time by 50%.</p>
+          </div>
+          <div class="impact-card">
+            <h4>Performance Prediction</h4>
+            <p>Data pipelines and anomaly detection over terabytes of simulation data.</p>
+          </div>
+          <div class="impact-card">
+            <h4>Simulation & Verification</h4>
+            <p>Dashboards and monitoring that improved visibility for DRAM product lines.</p>
+          </div>
+          <div class="impact-card">
+            <h4>MemberManager</h4>
+            <p>Graph DB + Redis membership platform with millisecond responses.</p>
+          </div>
+          <div class="impact-card">
+            <h4>PackageIO</h4>
+            <p>Platform for auto-generation and verification across all DRAM products.</p>
+          </div>
+          <div class="impact-card">
+            <h4>On-call readiness</h4>
+            <p>Resolved 65+ issues across 15+ release cycles to keep global teams shipping.</p>
+          </div>
+        </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-head">
           <h3>Machine Learning Intern · Morningstar</h3>
           <span class="muted">Mumbai · May 2019 – Jul 2019</span>
         </div>
-        <p>Developed production modules for hierarchical mapping and extraction of financial terms in annual reports, reaching 96%+ F1 with XGBoost and CNNs.</p>
+        <p class="muted">Built production modules for hierarchical mapping and extraction of financial terms in annual reports; reached 96%+ F1 with XGBoost and CNNs.</p>
       </div>
     </div>
     <div class="subsection">
@@ -218,11 +231,11 @@
     </div>
   </section>
 
-  <section id="blog" class="section blog">
+  <section id="blog" class="page section blog">
     <div class="section-header">
       <p class="eyebrow">Blog</p>
       <h2>Writing & deep dives</h2>
-      <p class="muted">Short intros with links out. I write about practical ML systems, data infra, and lessons from shipping.</p>
+      <p class="muted">Short intros with links out. Topics: practical ML systems, data infra, lessons from shipping.</p>
     </div>
     <div class="card-grid">
       <div class="card">
@@ -243,7 +256,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="page section contact">
     <div class="section-header">
       <p class="eyebrow">Contact</p>
       <h2>Let’s talk</h2>
