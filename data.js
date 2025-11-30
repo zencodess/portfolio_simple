@@ -1,0 +1,138 @@
+// central data for portfolio pages
+window.portfolioData = {
+  about: {
+    summary:
+      "I design data products end-to-end: ingestion, storage, ML, and the APIs or dashboards that ship insight fast.",
+    whatIDo: [
+      "LLM/RAG apps for tabular and knowledge-base search.",
+      "Real-time and batch data pipelines with observability.",
+      "APIs and dashboards that translate data into action."
+    ],
+    tech:
+      "Python, Java, SQL · PyTorch, TensorFlow · Kafka, Spark · PostgreSQL, MySQL, Redis, Neo4j · Docker, Kubernetes, Azure/GCP.",
+    highlights: [
+      "Execution and customer-focus awards at Micron.",
+      "Dean's Merit List for academics.",
+      "Best Poster for AutoCodeDoc; two papers on automation."
+    ]
+  },
+  projects: [
+    {
+      bucket: "Machine Learning",
+      items: [
+        {
+          title: "Natural Language Interface to CDM",
+          tag: "LLM · RAG",
+          desc: "Table-aware RAG to answer corporate data queries; boosts data literacy and discoverability.",
+          link: "#"
+        },
+        {
+          title: "LLM-TruthLens",
+          tag: "Verification",
+          desc: "Real-time LLM verification for entity and yes/no QA using Llama, BERT, RoBERTa, and WikiData signals.",
+          link: "#"
+        },
+        {
+          title: "Mood Predictor",
+          tag: "Time-series",
+          desc: "Smartphone-sensor mood prediction with LSTM + attention; achieved 97% F1 on activity data.",
+          link: "#"
+        },
+        {
+          title: "Search & Stay Recommender",
+          tag: "LightGBM",
+          desc: "Expedia hotel recommendations using LambdaRank, optimized for NDCG on search-query signals.",
+          link: "#"
+        }
+      ]
+    },
+    {
+      bucket: "Backend & Data",
+      items: [
+        {
+          title: "Ride-Share Demand Viewer",
+          tag: "Real-time",
+          desc: "Streaming pipeline at 50K updates/sec and 0.5 ms latency with Kafka, Debezium CDC, PostgreSQL.",
+          link: "#"
+        },
+        {
+          title: "AIDB ML Analytics Engine",
+          tag: "SQL + ML",
+          desc: "Batch processing, aggregation, and SQL parsing (sqlglot) for cheaper unstructured analytics.",
+          link: "#"
+        }
+      ]
+    },
+    {
+      bucket: "Full-stack Delivery",
+      items: [
+        {
+          title: "DocToCode",
+          tag: "Spec → Code",
+          desc: "Spec-to-code generation platform cutting flash memory design iteration time by 50% across teams.",
+          link: "#"
+        },
+        {
+          title: "Simulation & Verification Dashboards",
+          tag: "APIs",
+          desc: "Backend services and observability for DRAM simulation dashboards serving global product lines.",
+          link: "#"
+        },
+        {
+          title: "MemberManager",
+          tag: "Graph + Cache",
+          desc: "Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.",
+          link: "#"
+        }
+      ]
+    }
+  ],
+  experience: [
+    {
+      role: "Software Engineer II · Micron Technology",
+      location: "Hyderabad",
+      dates: "Aug 2020 – May 2023",
+      summary:
+        "Shipped tools that shortened design cycles, raised reliability, and kept teams unblocked during critical releases.",
+      impacts: [
+        { title: "DocToCode", desc: "Spec-to-code platform that cut flash memory design iteration time by 50%." },
+        { title: "Performance Prediction", desc: "Data pipelines and anomaly detection over terabytes of simulation data." },
+        { title: "Simulation & Verification", desc: "Dashboards and monitoring that improved visibility for DRAM product lines." },
+        { title: "MemberManager", desc: "Graph DB + Redis membership platform with millisecond responses." },
+        { title: "PackageIO", desc: "Platform for auto-generation and verification across all DRAM products." },
+        { title: "On-call readiness", desc: "Resolved 65+ issues across 15+ release cycles to keep global teams shipping." }
+      ]
+    },
+    {
+      role: "Machine Learning Intern · Morningstar",
+      location: "Mumbai",
+      dates: "May 2019 – Jul 2019",
+      summary:
+        "Built production modules for hierarchical mapping and extraction of financial terms; reached 96%+ F1 with XGBoost and CNNs.",
+      impacts: []
+    }
+  ],
+  honors: [
+    "Two papers on software-driven process automation and collaboration at Micron.",
+    "Best Poster for AutoCodeDoc; third place poster among 70 products.",
+    "Awards for Excellent Execution, Tenacity, and Customer Focus.",
+    "Dean's Merit List for academics."
+  ],
+  blog: [
+    {
+      title: "Making RAG work for structured data",
+      desc: "How table representation learning and indexing choices change retrieval quality for enterprise knowledge bases.",
+      link: "#"
+    },
+    {
+      title: "What observability means for ML APIs",
+      desc: "Patterns for tracing, monitoring, and alerting across ML-powered endpoints and streaming consumers.",
+      link: "#"
+    },
+    {
+      title: "From SQL to models: the AIDB journey",
+      desc: "Design notes from building a SQL-first path to advanced ML results for no-code users.",
+      link: "#"
+    }
+  ]
+};

@@ -6,7 +6,7 @@
   <title>Projects | Sravya</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="projects">
   <nav class="navbar">
     <div class="logo">Sravya</div>
     <ul class="nav-links">
@@ -25,99 +25,13 @@
       <h1>Recent work by focus area</h1>
       <p class="muted">Buckets keep scanning simple. Each card can link out to details.</p>
     </div>
-    <div class="bucket-grid">
-      <div class="bucket">
-        <h3>Machine Learning</h3>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-header">
-              <h4>Natural Language Interface to CDM</h4>
-              <span class="pill">LLM · RAG</span>
-            </div>
-            <p>Table-aware RAG to answer corporate data queries; boosts data literacy and discoverability.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>LLM-TruthLens</h4>
-              <span class="pill">Verification</span>
-            </div>
-            <p>Real-time LLM verification for entity and yes/no QA using Llama, BERT, RoBERTa, and WikiData signals.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>Mood Predictor</h4>
-              <span class="pill">Time-series</span>
-            </div>
-            <p>Smartphone-sensor mood prediction with LSTM + attention; achieved 97% F1 on activity data.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>Search & Stay Recommender</h4>
-              <span class="pill">LightGBM</span>
-            </div>
-            <p>Expedia hotel recommendations using LambdaRank, optimized for NDCG on search-query signals.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-        </div>
-      </div>
-      <div class="bucket">
-        <h3>Backend & Data</h3>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-header">
-              <h4>Ride-Share Demand Viewer</h4>
-              <span class="pill">Real-time</span>
-            </div>
-            <p>Streaming pipeline at 50K updates/sec and 0.5 ms latency with Kafka, Debezium CDC, PostgreSQL.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>AIDB ML Analytics Engine</h4>
-              <span class="pill">SQL + ML</span>
-            </div>
-            <p>Batch processing, aggregation, and SQL parsing (sqlglot) for cheaper unstructured analytics.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-        </div>
-      </div>
-      <div class="bucket">
-        <h3>Full-stack Delivery</h3>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-header">
-              <h4>DocToCode</h4>
-              <span class="pill">Spec → Code</span>
-            </div>
-            <p>Spec-to-code generation platform cutting flash memory design iteration time by 50% across teams.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>Simulation & Verification Dashboards</h4>
-              <span class="pill">APIs</span>
-            </div>
-            <p>Backend services and observability for DRAM simulation dashboards serving global product lines.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h4>MemberManager</h4>
-              <span class="pill">Graph + Cache</span>
-            </div>
-            <p>Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="projects-root"></div>
   </main>
 
   <footer class="footer">
     <p>© 2025 Sravya — ML + Backend Engineer</p>
   </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

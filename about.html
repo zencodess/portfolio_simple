@@ -6,7 +6,7 @@
   <title>About | Sravya</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="about">
   <nav class="navbar">
     <div class="logo">Sravya</div>
     <ul class="nav-links">
@@ -23,34 +23,14 @@
     <div class="section-header">
       <p class="eyebrow">About</p>
       <h1>At-a-glance</h1>
-      <p class="muted">I design data products end-to-end: ingestion, storage, ML, and the APIs or dashboards that ship insight fast.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>What I do</h3>
-        <ul>
-          <li>LLM/RAG apps for tabular and knowledge-base search.</li>
-          <li>Real-time and batch data pipelines with observability.</li>
-          <li>APIs and dashboards that translate data into action.</li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>Tech I rely on</h3>
-        <p>Python, Java, SQL · PyTorch, TensorFlow · Kafka, Spark · PostgreSQL, MySQL, Redis, Neo4j · Docker, Kubernetes, Azure/GCP.</p>
-      </div>
-      <div class="about-card">
-        <h3>Highlights</h3>
-        <ul>
-          <li>Execution and customer-focus awards at Micron.</li>
-          <li>Dean's Merit List for academics.</li>
-          <li>Best Poster for AutoCodeDoc; two papers on automation.</li>
-        </ul>
-      </div>
+      <div id="about-root"></div>
     </div>
   </main>
 
   <footer class="footer">
     <p>© 2025 Sravya — ML + Backend Engineer</p>
   </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

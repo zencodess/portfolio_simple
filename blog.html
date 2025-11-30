@@ -6,7 +6,7 @@
   <title>Blog | Sravya</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="blog">
   <nav class="navbar">
     <div class="logo">Sravya</div>
     <ul class="nav-links">
@@ -25,27 +25,13 @@
       <h1>Writing & deep dives</h1>
       <p class="muted">Short intros with links out. Topics: practical ML systems, data infra, lessons from shipping.</p>
     </div>
-    <div class="card-grid">
-      <div class="card">
-        <h4>Making RAG work for structured data</h4>
-        <p>How table representation learning and indexing choices change retrieval quality for enterprise knowledge bases.</p>
-        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
-      </div>
-      <div class="card">
-        <h4>What observability means for ML APIs</h4>
-        <p>Patterns for tracing, monitoring, and alerting across ML-powered endpoints and streaming consumers.</p>
-        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
-      </div>
-      <div class="card">
-        <h4>From SQL to models: the AIDB journey</h4>
-        <p>Design notes from building a SQL-first path to advanced ML results for no-code users.</p>
-        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
-      </div>
-    </div>
+    <div id="blog-root"></div>
   </main>
 
   <footer class="footer">
     <p>© 2025 Sravya — ML + Backend Engineer</p>
   </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
