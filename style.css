@@ -159,6 +159,8 @@ h1{margin:0 0 10px;font-size:30px;line-height:1.25;}
   font-size:12px;
 }
 .link{color:var(--fern);font-weight:600;}
+.link-inline{color:var(--fern);font-weight:600;text-decoration:none;}
+.link-inline:hover{text-decoration:underline;}
 
 .timeline{display:grid;gap:14px;}
 .timeline-item{

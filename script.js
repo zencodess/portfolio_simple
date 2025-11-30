@@ -135,7 +135,7 @@
   }
 
   function init(){
-    if(page === "about") renderAbout();
+    if(page === "about" || page === "home") renderAbout();
     if(page === "projects") renderProjects();
     if(page === "experience") renderExperience();
     if(page === "blog") renderBlog();

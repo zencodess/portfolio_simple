@@ -2,10 +2,9 @@
 window.portfolioData = {
   about: {
     summary:
-      "I am a practical minded and detail-oriented software engineer with around 3 years of experience in the industry, shipping products with an impact on multiple processes, customer teams across the globe. \
-      My love for large-scale data systems and enterprise Machine learning systems, further pushed me to pursue MSc. Computer Science at University of Amsterdam & Vrije Universiteit Amsterdam. \
-      I love everything about backend, scalable systems, data, knowledge-base, graphs, search and retreival. \
-      I enjoy building solutions that bridge the gap between cutting-edge research and real-world applications, with a keen skillset in the intersection of backend and generative AI.",
+      "Practical, detail-oriented engineer with ~3 years of experience shipping products that impact teams globally. \
+      Pursued MSc Computer Science at University of Amsterdam (https://www.uva.nl) & Vrije Universiteit Amsterdam (https://vu.nl) to deepen large-scale data and ML systems expertise. \
+      Focused on backend, scalable systems, knowledge bases, graphs, and retrieval, with a knack for bridging research and real-world delivery in backend + generative AI.",
     whatIDo: [
       "LLM/RAG/Generative apps for tabular and knowledge-base search.",
       "Real-time and batch backend systems with scaling and observability.",
@@ -46,6 +45,12 @@ window.portfolioData = {
           tags: ["Recommender", "Search queries", "Personalization", "Learning to Rank"],
           desc: "Expedia hotel recommendations using LambdaRank, optimized for NDCG on search-query signals.",
           link: "#"
+        },
+        {
+          title: "Evolutionary Circuit Optimization",
+          tags: ["Genetic Algorithms", "NSGA-II", "Hardware Optimization"],
+          desc: "Multi-objective evolutionary algorithms to improve nanoscale circuit performance by 79%.",
+          link: "#"
         }
       ]
     },
@@ -65,6 +70,12 @@ window.portfolioData = {
           link: "#"
         },
         {
+          title: "Internal DB-Manager",
+          tags: ["SQL", "NoSQL", "CRUD", "Abstraction", "Interfaces"],
+          desc: "Unified data access layer that abstracts SQL/NoSQL CRUD operations to simplify app development and reduce drift.",
+          link: "#"
+        },
+        {
           title: "DocToCode",
           tags: ["Spec → Code"],
           desc: "Code generation platform cutting flash memory design iteration time by 50% across teams.",
@@ -74,6 +85,12 @@ window.portfolioData = {
           title: "MemberManager",
           tags: ["GraphDB", "Neo4j", "Redis", "Cache"],
           desc: "Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.",
+          link: "#"
+        },
+        {
+          title: "PackageIO Platform",
+          tags: ["APIs", "Automation", "Verification"],
+          desc: "Platform for auto-generation, exchange, and verification across DRAM products.",
           link: "#"
         }
       ]
@@ -87,12 +104,18 @@ window.portfolioData = {
           desc: "Backend services and observability for DRAM simulation dashboards serving global product lines.",
           link: "#"
         },
+        {
+          title: "Dropbox Clone",
+          tags: ["P2P", "File sharing", "Indexing"],
+          desc: "Peer-to-peer file sharing app with search, indexing, download, and upload.",
+          link: "#"
+        }
       ]
     }
   ],
   experience: [
     {
-      role: "Software Engineer II · Micron Technology",
+      role: "Software Engineer II · Micron Technology (https://www.micron.com)",
       location: "Hyderabad",
       dates: "Aug 2020 – May 2023",
       summary:
@@ -107,7 +130,7 @@ window.portfolioData = {
       ]
     },
     {
-      role: "Machine Learning Intern · Morningstar",
+      role: "Machine Learning Intern · Morningstar (https://www.morningstar.com)",
       location: "Mumbai",
       dates: "May 2019 – Jul 2019",
       summary:
