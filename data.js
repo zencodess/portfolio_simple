@@ -2,10 +2,13 @@
 window.portfolioData = {
   about: {
     summary:
-      "I design data products end-to-end: ingestion, storage, ML, and the APIs or dashboards that ship insight fast.",
+      "I am a practical minded and detail-oriented software engineer with around 3 years of experience in the industry, shipping products with an impact on multiple processes, customer teams across the globe. \
+      My love for large-scale data systems and enterprise Machine learning systems, further pushed me to pursue MSc. Computer Science at University of Amsterdam & Vrije Universiteit Amsterdam. \
+      I love everything about backend, scalable systems, data, knowledge-base, graphs, search and retreival. \
+      I enjoy building solutions that bridge the gap between cutting-edge research and real-world applications, with a keen skillset in the intersection of backend and generative AI.",
     whatIDo: [
-      "LLM/RAG apps for tabular and knowledge-base search.",
-      "Real-time and batch data pipelines with observability.",
+      "LLM/RAG/Generative apps for tabular and knowledge-base search.",
+      "Real-time and batch backend systems with scaling and observability.",
       "APIs and dashboards that translate data into action."
     ],
     tech:
@@ -13,7 +16,7 @@ window.portfolioData = {
     highlights: [
       "Execution and customer-focus awards at Micron.",
       "Dean's Merit List for academics.",
-      "Best Poster for AutoCodeDoc; two papers on automation."
+      "Best Poster for AutoCodeDoc; two papers on software development."
     ]
   },
   projects: [
@@ -21,69 +24,69 @@ window.portfolioData = {
       bucket: "Machine Learning",
       items: [
         {
-          title: "Natural Language Interface to CDM",
-          tag: "LLM · RAG",
-          desc: "Table-aware RAG to answer corporate data queries; boosts data literacy and discoverability.",
+          title: "Natural Language Interface to Relational Databases",
+          tags: ["LLM · RAG", "Table QA", "Databases", "Indexing"],
+          desc: "Table-aware RAG to answer corporate data queries; Boosts data literacy, accessibility and discoverability.",
           link: "#"
         },
         {
           title: "LLM-TruthLens",
-          tag: "Verification",
+          tags: ["LLM QA", "Disambiguation", "Entity recognition", "Fact verification", "Multi-threading"],
           desc: "Real-time LLM verification for entity and yes/no QA using Llama, BERT, RoBERTa, and WikiData signals.",
           link: "#"
         },
         {
           title: "Mood Predictor",
-          tag: "Time-series",
+          tags: ["Time-series", "LSTM + Attention", "RNNs", "GRUs", "Sensor Data"],
           desc: "Smartphone-sensor mood prediction with LSTM + attention; achieved 97% F1 on activity data.",
           link: "#"
         },
         {
-          title: "Search & Stay Recommender",
-          tag: "LightGBM",
+          title: "Expedia stay Recommender",
+          tags: ["Recommender", "Search queries", "Personalization", "Learning to Rank"],
           desc: "Expedia hotel recommendations using LambdaRank, optimized for NDCG on search-query signals.",
           link: "#"
         }
       ]
     },
     {
-      bucket: "Backend & Data",
+      bucket: "Backend focused",
       items: [
         {
           title: "Ride-Share Demand Viewer",
-          tag: "Real-time",
-          desc: "Streaming pipeline at 50K updates/sec and 0.5 ms latency with Kafka, Debezium CDC, PostgreSQL.",
+          tags: ["Real-time", "Streaming"],
+          desc: "Streaming application at 50K updates/sec and 0.5 ms latency with Kafka, Debezium CDC, PostgreSQL.",
           link: "#"
         },
         {
           title: "AIDB ML Analytics Engine",
-          tag: "SQL + ML",
+          tags: ["SQL", "ML"],
           desc: "Batch processing, aggregation, and SQL parsing (sqlglot) for cheaper unstructured analytics.",
+          link: "#"
+        },
+        {
+          title: "DocToCode",
+          tags: ["Spec → Code"],
+          desc: "Code generation platform cutting flash memory design iteration time by 50% across teams.",
+          link: "#"
+        },
+        {
+          title: "MemberManager",
+          tags: ["GraphDB", "Neo4j", "Redis", "Cache"],
+          desc: "Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.",
           link: "#"
         }
       ]
     },
     {
-      bucket: "Full-stack Delivery",
+      bucket: "Frontend focused",
       items: [
         {
-          title: "DocToCode",
-          tag: "Spec → Code",
-          desc: "Spec-to-code generation platform cutting flash memory design iteration time by 50% across teams.",
-          link: "#"
-        },
-        {
           title: "Simulation & Verification Dashboards",
-          tag: "APIs",
+          tags: ["APIs", "Dashboards"],
           desc: "Backend services and observability for DRAM simulation dashboards serving global product lines.",
           link: "#"
         },
-        {
-          title: "MemberManager",
-          tag: "Graph + Cache",
-          desc: "Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.",
-          link: "#"
-        }
       ]
     }
   ],
@@ -96,7 +99,7 @@ window.portfolioData = {
         "Shipped tools that shortened design cycles, raised reliability, and kept teams unblocked during critical releases.",
       impacts: [
         { title: "DocToCode", desc: "Spec-to-code platform that cut flash memory design iteration time by 50%." },
-        { title: "Performance Prediction", desc: "Data pipelines and anomaly detection over terabytes of simulation data." },
+        { title: "Performance Prediction", desc: "Scanner module and anomaly detection over terabytes of simulation data." },
         { title: "Simulation & Verification", desc: "Dashboards and monitoring that improved visibility for DRAM product lines." },
         { title: "MemberManager", desc: "Graph DB + Redis membership platform with millisecond responses." },
         { title: "PackageIO", desc: "Platform for auto-generation and verification across all DRAM products." },

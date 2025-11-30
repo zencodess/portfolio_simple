@@ -150,6 +150,7 @@ h1{margin:0 0 10px;font-size:30px;line-height:1.25;}
   box-shadow:0 8px 16px rgba(0,0,0,0.05);
 }
 .card-header{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;}
 .pill{
   padding:6px 10px;
   border-radius:999px;

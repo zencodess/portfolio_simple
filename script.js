@@ -59,7 +59,11 @@
         const card = el("div",{className:"card"});
         const header = el("div",{className:"card-header"});
         header.appendChild(el("h4",{text:item.title}));
-        header.appendChild(el("span",{className:"pill",text:item.tag}));
+        if(item.tags && Array.isArray(item.tags)){
+          const tagRow = el("div",{className:"tag-row"});
+          item.tags.forEach(t=>tagRow.appendChild(el("span",{className:"pill",text:t})));
+          header.appendChild(tagRow);
+        }
         card.appendChild(header);
         card.appendChild(el("p",{text:item.desc}));
         const link = el("a",{className:"link",href:item.link || "#",text:"View details →"});
