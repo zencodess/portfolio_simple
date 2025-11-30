@@ -1,41 +1,273 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Portfolio</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravya | ML + Backend Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav class="navbar"><h2 class="logo">YourName</h2><ul class="nav-links">
-<li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li><li><a href="#blog">Blog</a></li>
-<li><a href="#contact">Contact</a></li></ul></nav>
-<section class="hero"><div class="hero-text">
-<span class="tag">Software Developer · MSc CS</span>
-<h1>Hi, I'm <span class="name">Your Name</span></h1>
-<p>I build data-driven backends, distributed systems, and ML-powered apps.</p>
-<div class="hero-buttons">
-<a href="#" class="btn primary">View GitHub</a>
-<a href="#" class="btn secondary">Download Resume</a></div>
-</div><div class="hero-photo"><div class="photo-placeholder">Your Photo</div></div></section>
-<section id="projects" class="section"><h2 class="section-title">Projects</h2>
-<div class="grid"><div class="card"><div class="card-thumb">Thumbnail</div>
-<h3>Project Title</h3><p>Small description.</p>
-<div class="tags"><span>Python</span><span>Spark</span></div>
-<a href="#" class="github-link">View on GitHub →</a></div></div></section>
-<section id="about" class="section about"><h2 class="section-title">About Me</h2>
-<div class="about-content"><div class="about-photo">Your Photo</div>
-<div class="about-text"><p>I'm a software developer...</p></div></div></section>
-<section id="skills" class="section"><h2 class="section-title">Skills</h2>
-<div class="skills-grid"><span>Python</span><span>Java</span><span>C++</span></div></section>
-<section id="blog" class="section"><h2 class="section-title">Blog</h2>
-<div class="grid"><div class="card"><h3>Blog Title</h3><p>Summary.</p>
-<a class="github-link" href="#">Read article →</a></div></div></section>
-<section id="contact" class="section contact"><h2 class="section-title">Contact</h2>
-<div class="contact-box"><p>Email: you@example.com</p>
-<form class="contact-form"><input placeholder="Name"/><input placeholder="Email"/>
-<textarea rows="4" placeholder="Message"></textarea><button>Send Message</button></form>
-</div></section>
-<footer class="footer">© 2025 Your Name — Built with HTML & CSS</footer>
-</body></html>
+  <nav class="navbar">
+    <div class="logo">Sravya</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <span class="tag">Backend · ML · Data Platforms</span>
+      <h1>Building reliable systems and ML products with real impact.</h1>
+      <p class="lede">
+        MSc CS grad, ex-Micron engineer. I ship data pipelines, LLM/RAG apps, and
+        analytics platforms that shorten iteration loops for teams.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-highlights">
+        <div><strong>50% faster</strong> design cycles with DocToCode</div>
+        <div><strong>65+ bugs</strong> resolved on-call across 15+ release cycles</div>
+        <div><strong>Real-time</strong> pipelines at 50K updates/sec</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="nameplate">
+        <div class="avatar">S</div>
+        <div>
+          <p class="muted">Software Engineer · Hyderabad / Netherlands</p>
+          <p class="focus">ML + Backend + Data Engineering</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div><span>5+ yrs</span><small>engineering</small></div>
+        <div><span>GenAI</span><small>LLMs · RAG · KBs</small></div>
+        <div><span>Infra</span><small>Kafka · K8s · Cloud</small></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <div class="section-header">
+      <p class="eyebrow">About</p>
+      <h2>At-a-glance</h2>
+      <p class="muted">
+        I design data products end-to-end: ingestion, storage, ML, and the
+        dashboards or APIs that put insights in front of people fast.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>What I do</h3>
+        <ul>
+          <li>LLM/RAG apps for tabular and knowledge-base search</li>
+          <li>Real-time and batch data pipelines with observability</li>
+          <li>APIs and dashboards that translate data into action</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>Tech I rely on</h3>
+        <p>Python, Java, SQL · PyTorch, TensorFlow · Kafka, Spark · PostgreSQL, MySQL, Redis, Neo4j · Docker, Kubernetes, Azure/GCP.</p>
+      </div>
+      <div class="about-card">
+        <h3>Highlights</h3>
+        <p>Published two papers on process automation; multiple execution and customer-focus awards; Dean's Merit List for academics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-header">
+      <p class="eyebrow">Projects</p>
+      <h2>Recent work by focus area</h2>
+      <p class="muted">Each card links out for details. Buckets keep things scannable: ML, backend, and full-stack delivery.</p>
+    </div>
+    <div class="bucket-grid">
+      <div class="bucket">
+        <h3>Machine Learning</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-header">
+              <h4>Natural Language Interface to CDM</h4>
+              <span class="pill">LLM · RAG</span>
+            </div>
+            <p>Built a table-aware RAG app to answer corporate data queries, boosting data literacy and discoverability.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>LLM-TruthLens</h4>
+              <span class="pill">Verification</span>
+            </div>
+            <p>Real-time LLM verification for entity and yes/no QA using Llama, BERT, RoBERTa, and WikiData signals.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>Mood Predictor</h4>
+              <span class="pill">Time-series</span>
+            </div>
+            <p>Smartphone-sensor mood prediction with LSTM + attention; achieved 97% F1 on activity data.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>Search & Stay Recommender</h4>
+              <span class="pill">LightGBM</span>
+            </div>
+            <p>Expedia hotel recommendations using LambdaRank, optimized for NDCG on search-query signals.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+        </div>
+      </div>
+      <div class="bucket">
+        <h3>Backend & Data</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-header">
+              <h4>Ride-Share Demand Viewer</h4>
+              <span class="pill">Real-time</span>
+            </div>
+            <p>Streaming pipeline at 50K updates/sec and 0.5 ms latency with Kafka, Debezium CDC, PostgreSQL.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>AIDB ML Analytics Engine</h4>
+              <span class="pill">SQL + ML</span>
+            </div>
+            <p>Batch processing, aggregation, and SQL parsing (sqlglot) for cheaper unstructured analytics.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+        </div>
+      </div>
+      <div class="bucket">
+        <h3>Full-stack Delivery</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-header">
+              <h4>DocToCode</h4>
+              <span class="pill">Spec → Code</span>
+            </div>
+            <p>Spec-to-code generation platform cutting flash memory design iteration time by 50% across teams.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>Simulation & Verification Dashboards</h4>
+              <span class="pill">APIs</span>
+            </div>
+            <p>Backend services and observability for DRAM simulation dashboards serving global product lines.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h4>MemberManager</h4>
+              <span class="pill">Graph + Cache</span>
+            </div>
+            <p>Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">View details →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-header">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've worked</h2>
+      <p class="muted">Highlights from roles across semiconductor, finance, and generative AI.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-head">
+          <h3>Software Engineer II · Micron Technology</h3>
+          <span class="muted">Hyderabad · Aug 2020 – May 2023</span>
+        </div>
+        <ul>
+          <li>DocToCode: core features for spec-to-code platform; accelerated flash memory design by 50%.</li>
+          <li>Performance Prediction: data ingestion, processing, anomaly detection on terabytes of simulation data.</li>
+          <li>Simulation/Verification dashboards: backend and monitoring for DRAM product lines.</li>
+          <li>MemberManager: graph DB + Redis powered membership service with millisecond responses.</li>
+          <li>PackageIO: platform for auto-generation and verification across DRAM products.</li>
+          <li>On-call: resolved 65+ software bugs across 15+ release cycles to unblock global teams.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-head">
+          <h3>Machine Learning Intern · Morningstar</h3>
+          <span class="muted">Mumbai · May 2019 – Jul 2019</span>
+        </div>
+        <p>Developed production modules for hierarchical mapping and extraction of financial terms in annual reports, reaching 96%+ F1 with XGBoost and CNNs.</p>
+      </div>
+    </div>
+    <div class="subsection">
+      <h3>Internal publications & honors</h3>
+      <ul class="inline-list">
+        <li>Two papers on software-driven process automation and collaboration at Micron.</li>
+        <li>Best Poster for AutoCodeDoc; third place poster among 70 products.</li>
+        <li>Awards for Excellent Execution, Tenacity, and Customer Focus.</li>
+        <li>Dean's Merit List for academics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="blog" class="section blog">
+    <div class="section-header">
+      <p class="eyebrow">Blog</p>
+      <h2>Writing & deep dives</h2>
+      <p class="muted">Short intros with links out. I write about practical ML systems, data infra, and lessons from shipping.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Making RAG work for structured data</h4>
+        <p>How table representation learning and indexing choices change retrieval quality for enterprise knowledge bases.</p>
+        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
+      </div>
+      <div class="card">
+        <h4>What observability means for ML APIs</h4>
+        <p>Patterns for tracing, monitoring, and alerting across ML-powered endpoints and streaming consumers.</p>
+        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
+      </div>
+      <div class="card">
+        <h4>From SQL to models: the AIDB journey</h4>
+        <p>Design notes from building a SQL-first path to advanced ML results for no-code users.</p>
+        <a class="link" href="#" target="_blank" rel="noreferrer">Read post →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s talk</h2>
+      <p class="muted">Quick form below, or email me directly at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </div>
+    <form class="contact-form">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@email.com" />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="What can we build together?"></textarea>
+      </div>
+      <button type="submit" class="btn primary full">Send message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Sravya — ML + Backend Engineer</p>
+  </footer>
+</body>
+</html>
