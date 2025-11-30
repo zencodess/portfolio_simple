@@ -17,17 +17,10 @@
     if(!root || !data.about) return;
     root.innerHTML = "";
 
-    const summary = el("p",{className:"muted",text:data.about.summary});
+    const summary = el("p",{className:"muted",html:data.about.summary});
     root.appendChild(summary);
 
     const grid = el("div",{className:"about-grid"});
-
-    const what = el("div",{className:"about-card"});
-    what.appendChild(el("h3",{text:"What I do"}));
-    const list = el("ul");
-    data.about.whatIDo.forEach(item=>{const li=el("li",{text:item});list.appendChild(li);});
-    what.appendChild(list);
-    grid.appendChild(what);
 
     const tech = el("div",{className:"about-card"});
     tech.appendChild(el("h3",{text:"Tech I rely on"}));
@@ -49,32 +42,35 @@
     if(!root || !data.projects) return;
     root.innerHTML = "";
 
-    const bucketGrid = el("div",{className:"bucket-grid"});
-    data.projects.forEach(bucket=>{
-      const bucketEl = el("div",{className:"bucket"});
-      bucketEl.appendChild(el("h3",{text:bucket.bucket}));
+    const scrollWrap = el("div",{className:"projects-scroll"});
+    const cards = el("div",{className:"card-grid projects-grid"});
+    const items = data.projects.flatMap(b=>b.items.map(it=>({...it,bucket:b.bucket})));
 
-      const cards = el("div",{className:"card-grid"});
-      bucket.items.forEach(item=>{
-        const card = el("div",{className:"card"});
-        const header = el("div",{className:"card-header"});
-        header.appendChild(el("h4",{text:item.title}));
-        if(item.tags && Array.isArray(item.tags)){
-          const tagRow = el("div",{className:"tag-row"});
-          item.tags.forEach(t=>tagRow.appendChild(el("span",{className:"pill",text:t})));
-          header.appendChild(tagRow);
-        }
-        card.appendChild(header);
-        card.appendChild(el("p",{text:item.desc}));
-        const link = el("a",{className:"link",href:item.link || "#",text:"View details →"});
-        link.target = "_blank"; link.rel="noreferrer";
-        card.appendChild(link);
-        cards.appendChild(card);
-      });
-      bucketEl.appendChild(cards);
-      bucketGrid.appendChild(bucketEl);
+    items.forEach(item=>{
+      const card = el("div",{className:"card project-card"});
+      const imgWrap = el("div",{className:"card-thumb"});
+      const img = el("img",{});
+      img.src = item.image || "assets/project-placeholder.png";
+      img.alt = item.title;
+      imgWrap.appendChild(img);
+      card.appendChild(imgWrap);
+
+      card.appendChild(el("p",{className:"bucket-pill",text:item.bucket}));
+      card.appendChild(el("h4",{text:item.title}));
+      card.appendChild(el("p",{className:"muted",text:item.desc}));
+      if(item.tags && Array.isArray(item.tags)){
+        const tagRow = el("div",{className:"tag-row"});
+        item.tags.forEach(t=>tagRow.appendChild(el("span",{className:"pill",text:t})));
+        card.appendChild(tagRow);
+      }
+      const link = el("a",{className:"link",href:item.link || "#",text:"View details →"});
+      link.target = "_blank"; link.rel="noreferrer";
+      card.appendChild(link);
+      cards.appendChild(card);
     });
-    root.appendChild(bucketGrid);
+
+    scrollWrap.appendChild(cards);
+    root.appendChild(scrollWrap);
   }
 
   function renderExperience(){
@@ -95,7 +91,7 @@
       const bubble = el("div",{className:"timeline-bubble"});
 
       bubble.appendChild(el("p",{className:"muted tiny",text:role.dates}));
-      bubble.appendChild(el("h3",{text:role.role}));
+      bubble.appendChild(el("h3",{html:role.role}));
       bubble.appendChild(el("p",{className:"muted",text:short(role.summary)}));
 
       item.appendChild(bubble);
