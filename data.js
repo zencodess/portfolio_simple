@@ -2,10 +2,13 @@
 window.portfolioData = {
   about: {
     summary:
-      "I am a practical-minded and detail-oriented software engineer with around 3 years of experience in the industry, shipping products that impact multiple processes and customer teams across the globe. \
-      My love for large-scale data systems and enterprise machine learning systems pushed me to pursue an MSc in Computer Science at the <a href='https://www.uva.nl' target='_blank' rel='noreferrer'>University of Amsterdam</a> and <a href='https://vu.nl' target='_blank' rel='noreferrer'>Vrije Universiteit Amsterdam</a>. \
-      I love everything about backend, scalable systems, data, knowledge bases, graphs, search, and retrieval. \
-      I enjoy building solutions that bridge the gap between cutting-edge research and real-world applications, with a keen skill set in the intersection of backend and generative AI.",
+      "I’m a practical, detail-minded engineer with ~3 years of experience shipping products that multiple teams rely on. I love turning new ideas into MVPs and MVPs into reliable apps. Databases, distributed systems, knowledge bases, graphs, search/retrieval, and LLMs are my playground. My curiosity pushed me to pursue an MSc in Computer Science at the <a href='https://www.uva.nl' target='_blank' rel='noreferrer'>University of Amsterdam</a> and <a href='https://vu.nl' target='_blank' rel='noreferrer'>Vrije Universiteit Amsterdam</a>. I enjoy bridging research and real-world delivery—and fixing code, mine and yours, before my hot chocolate gets cold.",
+    keyPoints: [
+      "3 years shipping backend + ML systems with global impact across 5+ countries",
+      "Top 3/70 Best Poster; 4+ Micron leadership awards",
+      "MSc CS at <a href='https://www.uva.nl' target='_blank' rel='noreferrer'>University of Amsterdam</a> & <a href='https://vu.nl' target='_blank' rel='noreferrer'>Vrije Universiteit Amsterdam</a>",
+      "Excited by data platforms, knowledge graphs, search/retrieval, and generative AI"
+    ],
     tech:
       "Python, Java, SQL · PyTorch, TensorFlow · Kafka, Spark · PostgreSQL, MySQL, Redis, Neo4j · Docker, Kubernetes, Azure/GCP.",
     highlights: [

@@ -83,6 +83,7 @@ a{color:inherit;text-decoration:none;}
   color:var(--accent);
 }
 h1{margin:0 0 10px;font-size:30px;line-height:1.25;}
+.big-name{font-size:36px;}
 .lede{margin:0 0 14px;color:var(--muted);}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
 .playful{margin:8px 0 0;color:var(--accent-2);font-weight:600;}
@@ -123,12 +124,27 @@ h1{margin:0 0 10px;font-size:30px;line-height:1.25;}
 }
 .about-card{
   background:var(--surface);
-  border:1px solid var(--border);
+  border:1px solid var(--accent-2);
   border-radius:var(--radius);
   padding:14px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.35);
 }
 .about-card h3{margin-top:0;}
 .about-card ul{margin:8px 0 0;padding-left:18px;color:var(--muted);}
+.chip-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:10px 0 14px;
+}
+.chip{
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid var(--accent);
+  background:rgba(183,138,255,0.12);
+  color:var(--text);
+  font-size:13px;
+}
 
 .bucket-grid{display:grid;gap:16px;}
 .bucket-grid{

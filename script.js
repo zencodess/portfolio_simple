@@ -20,6 +20,16 @@
     const summary = el("p",{className:"muted",html:data.about.summary});
     root.appendChild(summary);
 
+    if(data.about.keyPoints && Array.isArray(data.about.keyPoints)){
+      const chips = el("div",{className:"chip-row"});
+      data.about.keyPoints.forEach(pt=>{
+        const chip = el("span",{className:"chip"});
+        chip.innerHTML = pt;
+        chips.appendChild(chip);
+      });
+      root.appendChild(chips);
+    }
+
     const grid = el("div",{className:"about-grid"});
 
     const tech = el("div",{className:"about-card"});
