@@ -4,10 +4,11 @@ window.portfolioData = {
     summary:
       "I’m a practical, detail-minded engineer with ~3 years of experience shipping products that multiple teams rely on. I love turning new ideas into MVPs and MVPs into reliable apps. Databases, distributed systems, knowledge bases, graphs, search/retrieval, and LLMs are my playground. My curiosity pushed me to pursue an MSc in Computer Science at the <a href='https://www.uva.nl' target='_blank' rel='noreferrer'>University of Amsterdam</a> and <a href='https://vu.nl' target='_blank' rel='noreferrer'>Vrije Universiteit Amsterdam</a>. I enjoy bridging research and real-world delivery—and fixing code, mine and yours, before my hot chocolate gets cold.",
     keyPoints: [
-      "3 years shipping backend + ML systems with global impact across 5+ countries",
-      "Top 3/70 Best Poster; 4+ Micron leadership awards",
+      "Top 3/70 Best Poster",
+      "4+ Micron leadership awards",
+      "Worked with global teams across 5+ countries",
       "MSc CS at <a href='https://www.uva.nl' target='_blank' rel='noreferrer'>University of Amsterdam</a> & <a href='https://vu.nl' target='_blank' rel='noreferrer'>Vrije Universiteit Amsterdam</a>",
-      "Excited by data platforms, knowledge graphs, search/retrieval, and generative AI"
+      "Excited by backend development, search/retrieval, and generative AI"
     ],
     tech:
       "Python, Java, SQL · PyTorch, TensorFlow · Kafka, Spark · PostgreSQL, MySQL, Redis, Neo4j · Docker, Kubernetes, Azure/GCP.",
@@ -98,6 +99,32 @@ window.portfolioData = {
           image: "assets/project-placeholder.png"
         },
         {
+          title: "PackageIO Platform",
+          tags: ["APIs", "Automation", "Verification"],
+          desc: "Platform for auto-generation, exchange, and verification across DRAM products.",
+          link: "#",
+          image: "assets/project-placeholder.png"
+        },
+        {
+          title: "Dropbox Clone",
+          tags: ["P2P", "File sharing", "Indexing"],
+          desc: "Peer-to-peer file sharing app with search, indexing, download, and upload.",
+          link: "#",
+          image: "assets/project-placeholder.png"
+        }
+      ]
+    },
+    {
+      bucket: "Full-stack Development",
+      items: [
+        {
+          title: "Simulation & Verification Dashboards",
+          tags: ["APIs", "Dashboards"],
+          desc: "Backend services and observability for DRAM simulation dashboards serving global product lines.",
+          link: "#",
+          image: "assets/project-placeholder.png"
+        },
+        {
           title: "DocToCode",
           tags: ["Spec → Code"],
           desc: "Code generation platform cutting flash memory design iteration time by 50% across teams.",
@@ -108,32 +135,6 @@ window.portfolioData = {
           title: "MemberManager",
           tags: ["GraphDB", "Neo4j", "Redis", "Cache"],
           desc: "Distributed membership platform with Neo4j and Redis delivering millisecond responses at scale.",
-          link: "#",
-          image: "assets/project-placeholder.png"
-        },
-        {
-          title: "PackageIO Platform",
-          tags: ["APIs", "Automation", "Verification"],
-          desc: "Platform for auto-generation, exchange, and verification across DRAM products.",
-          link: "#",
-          image: "assets/project-placeholder.png"
-        }
-      ]
-    },
-    {
-      bucket: "Frontend focused",
-      items: [
-        {
-          title: "Simulation & Verification Dashboards",
-          tags: ["APIs", "Dashboards"],
-          desc: "Backend services and observability for DRAM simulation dashboards serving global product lines.",
-          link: "#",
-          image: "assets/project-placeholder.png"
-        },
-        {
-          title: "Dropbox Clone",
-          tags: ["P2P", "File sharing", "Indexing"],
-          desc: "Peer-to-peer file sharing app with search, indexing, download, and upload.",
           link: "#",
           image: "assets/project-placeholder.png"
         }
@@ -173,19 +174,20 @@ window.portfolioData = {
   ],
   blog: [
     {
-      title: "Making RAG work for structured data",
-      desc: "How table representation learning and indexing choices change retrieval quality for enterprise knowledge bases.",
+      title: "Natural language questions to Database tables",
+      desc: "How to build an enterprise RAG over tabular data using LLMs.",
       link: "#"
     },
     {
-      title: "What observability means for ML APIs",
-      desc: "Patterns for tracing, monitoring, and alerting across ML-powered endpoints and streaming consumers.",
-      link: "#"
-    },
-    {
-      title: "From SQL to models: the AIDB journey",
+      title: "From SQL to ML results: the AIDB journey",
       desc: "Design notes from building a SQL-first path to advanced ML results for no-code users.",
       link: "#"
+    },
+    {
+      title: "Coding articles - DS and Algo",
+      desc: "A collection of programming articles",
+      link: "https://medium.com/@sathyasravya"
+
     }
   ]
 };
